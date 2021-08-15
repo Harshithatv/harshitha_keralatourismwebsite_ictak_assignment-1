@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+    
+}
+
+.back{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/ernakulam.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 2s;
+    background-position: center;
+    
+    animation-name: animate;
+    animation-direction:alternate-reverse;
+    animation-duration: 10s;
+    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-iteration-count: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(../images/bg1.jpg);
+    }
+    
+    50%{
+        background-image: url(../images/ernakulam.jpg);
+    }
+    
+    100%{
+        background-image: url(../images/houseboat.jpg);
+    }
+
+}
+
+
+.navbar-nav{
+   padding: 1%;
+   
+}
+
+.container-fluid{
+    background: url("../images/cherai.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.form-container{
+    border: 0px solid white;
+    padding: 50px 60px;
+    margin-top: 3vh;
+    color: white;
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    margin-bottom: 3vh;
+}
+
+.form-container h1{
+    text-align: center;
+}
+
+.container-fluid-bg{
+    background: url("../images/k11-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.my-margin{
+    height: 50%;
+}
+.heading{
+    text-align: center;
+    font-family: "italic";
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+.row img{
+    height: 100%;
+    margin-bottom: 10%;
+    
+
+}
+.container .content {
+    position: absolute; 
+    width: 84%; 
+    top: 40%;
+    text-align: center;
+    padding: 20px;
+    font-size:80%;
+    margin-right: 5px;
+    margin-bottom: 1%;
+    
+}
+.container .content a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container-up{
+    width: 100%;
+}
+
+
+  .main-row{
+      margin-top: 8%;
+  }
+  .card{
+      cursor:pointer;
+      margin-left: 10%;
+  }
+  .card img{
+      transform:translateY(-50px);
+      border-radius: 15px;
+      z-index:1;
+      height: 160px;
+  }
+  .card .card-body{
+      visibility: hidden;
+      transform: translateY(-150px);
+      height: 0px;
+
+  }
+  .card:hover .card-body{
+      visibility: visible;
+      transform: translateY(-50px);
+      transition: .5s;
+      height: auto;
+
+  }
+  .container h1{
+      text-align: center;
+      margin-top: 3%;
+      font-family: "italic";
+  }
+  footer{
+      background:black;
+      margin-top: 15%;
+      height: 20vh;
+      color: white;
+      text-align: center;
+      padding-top: 2%;     
+  }
+  
