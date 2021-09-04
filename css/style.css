@@ -144,10 +144,25 @@ body{
 #icons i{
     position: absolute;
     right:8px;
-    top:42%;
+    top:50%;
     visibility: hidden;
     
 }
+.progress {
+    height: 4px !important;
+    
+}
+
+.progress-bar-danger {
+    background-color: #e90f10;
+}
+.progress-bar-warning{
+    background-color: rgb(255, 94, 0);
+}
+.progress-bar-success{
+    background-color: #02b502;
+}
+
 .my-margin{
     height: 50%;
 }

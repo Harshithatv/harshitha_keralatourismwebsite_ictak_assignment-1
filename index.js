@@ -5,6 +5,7 @@ let error=document.getElementById("error");
 let errorn=document.getElementById("errorn");
 let errorp=document.getElementById("errorp");
 let errorc=document.getElementById("errorc");
+let passwordStrength=document.getElementById("password-strength");
 function formvalidate(){
     let email=document.getElementById("email").value.trim(); 
     let password=document.getElementById("password").value.trim();
@@ -151,6 +152,7 @@ function passwordval(){
     
     else{
         errorp.innerHTML="";
+      
         
     }
     strength=0;
@@ -167,12 +169,19 @@ function passwordval(){
     }
     if (strength == 1) {
         document.querySelector("#password-field").classList="fail"; 
+        document.querySelector("#password-strength").classList="progress-bar-danger"; 
+        passwordStrength.style = 'width: 10%';
     }
     else if (strength == 2) {
-        document.querySelector("#password-field").classList="middle";  
+        document.querySelector("#password-field").classList="middle"; 
+        document.querySelector("#password-strength").classList="progress-bar-warning";
+        passwordStrength.style = 'width: 60%';
+ 
     }
     else if (strength == 3){
         document.querySelector("#password-field").classList="success";
+        document.querySelector("#password-strength").classList="progress-bar-success";
+        passwordStrength.style = 'width: 100%';
     }
     
     
