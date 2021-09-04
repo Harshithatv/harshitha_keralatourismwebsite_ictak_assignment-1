@@ -7,13 +7,14 @@ body{
     height: 100%;
     width: 100%;
     background-size: cover;
-    
+   
     
 }
 
 .back{
     height: 100vh;
     width: 100%;
+    text-align: center;
     background-image: url(../images/ernakulam.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +45,32 @@ body{
     }
 
 }
+#heading{
+    padding-top: 10%;
+    font-size: 3.1vw;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#intro{
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: italic;
+}
 
+
+.back a{
+    display: inline-block;
+    
+    padding: 10px 30px;
+    color:black;
+    background:rgb(38, 179, 10);
+    text-decoration: none;
+}
 
 .navbar-nav{
    padding: 1%;
@@ -57,28 +83,70 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    width: 100%;
-    
+    width: 100%;    
 }
+#sign{
+    background: url("../images/k11-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;    
+}
+
 .form-container{
     border: 0px solid white;
-    padding: 50px 60px;
-    margin-top: 3vh;
+    padding: 40px 60px;
+    margin-top: 5vh;
     color: white;
     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     margin-bottom: 3vh;
+    
 }
 
 .form-container h1{
     text-align: center;
 }
 
-.container-fluid-bg{
-    background: url("../images/k11-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-   
+.success input,.success input:focus{
+    border:1px solid #292;
+    outline:none;
+}
+.fail input,.fail input:focus{
+    border: 1px solid red;
+    outline:none;
+}
+.middle input,.middle input:focus{
+    border: 3px solid rgb(255, 94, 0);
+    outline:none;
+}
+.fail input,.fail input:focus{
+    border: 1px solid red;
+    outline:none;
+}
+
+
+.success #icons i.fa-check-circle{
+    color:#292;
+    visibility: visible;
+}
+.fail #icons i.fa-exclamation-circle{
+    color:red;
+    visibility: visible;
+}
+.middle #icons i.fa-exclamation-circle{
+    color:rgb(255, 94, 0);
+    visibility: visible;
+}
+.success,.fail,.middle{
+    position: relative;
+}
+#icons i{
+    position: absolute;
+    right:8px;
+    top:42%;
+    visibility: hidden;
+    
 }
 .my-margin{
     height: 50%;
